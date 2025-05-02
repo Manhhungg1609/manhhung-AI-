@@ -65,6 +65,14 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
+/* Thêm hình ảnh */
+.image-responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
 /* Footer */
 footer {
   background-color: #20232a;
