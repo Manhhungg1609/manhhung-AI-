@@ -1,7 +1,14 @@
-body {
+/* Reset một số kiểu mặc định */
+body, h1, h2, h3, p, ul {
   margin: 0;
+  padding: 0;
+}
+
+/* Cấu trúc chung */
+body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
+  margin: 0;
 }
 
 header {
@@ -16,35 +23,49 @@ header h1 {
   font-size: 2rem;
 }
 
-nav {
-  margin-top: 0.5rem;
-}
-
 nav a {
-  margin: 0 1rem;
   color: #61dafb;
+  margin: 0 1rem;
   text-decoration: none;
 }
 
-main {
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Phần giới thiệu */
+.main {
   padding: 2rem;
 }
 
-.feature {
+/* Các phần chức năng */
+.feature, .topics {
   background-color: white;
   padding: 1.5rem;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-bottom: 2rem;
 }
 
-.topics article {
-  background-color: #fff;
-  padding: 1rem;
+h2 {
+  font-size: 1.6rem;
   margin-bottom: 1rem;
-  border-left: 4px solid #61dafb;
-  border-radius: 5px;
 }
 
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
 footer {
   background-color: #20232a;
   color: white;
