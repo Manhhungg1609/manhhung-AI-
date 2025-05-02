@@ -74,10 +74,19 @@ ul li {
   margin-bottom: 1rem;
 }
 
-/* Footer */
-footer {
-  background-color: #20232a;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem
+/* Phần liên hệ */
+.contact {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.contact ul {
+  list-style-type
