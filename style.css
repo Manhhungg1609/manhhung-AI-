@@ -1,92 +1,58 @@
-/* Reset một số kiểu mặc định */
+/* Reset kiểu mặc định */
 body, h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Cấu trúc chung */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
+  line-height: 1.6;
 }
 
 header {
   background-color: #20232a;
   color: white;
   padding: 1rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #61dafb;
+}
+
+header .logo-img {
+  width: 50px;
+  height: auto;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2rem;
+  font-weight: bold;
+  color: #61dafb;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
-  color: #61dafb;
-  margin: 0 1rem;
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #61dafb;
 }
 
 /* Phần giới thiệu */
-.main {
-  padding: 2rem;
-}
-
-/* Các phần chức năng */
-.feature, .topics {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
+.intro {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
   margin-bottom: 2rem;
-}
-
-h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-ul {
-  list-style-type: none;
-  margin-left: 1.5rem;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* Thêm hình ảnh */
-.image-responsive {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* Phần liên hệ */
-.contact {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  margin-top: 3rem;
-}
-
-.contact h2 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.contact ul {
-  list-style-type
+  border-radius: 10px;
+  box-shadow: 0 4px 6px
